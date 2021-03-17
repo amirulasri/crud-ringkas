@@ -1,10 +1,5 @@
 <?php
-$host = "localhost";
-$username = "root";
-$password = "";
-$dbname = "crud";
-
-$con = mysqli_connect($host, $username, $password, $dbname);
+include('conn.php');
 
 //Masukkan rekod baru
 if (isset($_POST['name']) && isset($_POST['item']) && isset($_POST['harga'])) {
